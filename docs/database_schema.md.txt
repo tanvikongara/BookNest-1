@@ -1,0 +1,51 @@
+User: user authentication data
+id (primary key)
+username
+email
+password
+account_creation_time 
+
+Book: individual book data
+id (primary key)
+google_books_id
+title
+author(s)
+description
+page_count
+categories
+published_date
+isbn_10
+
+User_Book: user's interaction with a book
+id (primary key)
+user_id
+book_id
+shelf
+rating
+date_started
+date_finished
+creation_time
+favorited
+
+Review: written review data
+id (primary key)
+user_id
+book_id
+rating
+written_review
+creation_time
+
+Reading_Session: pages read
+id (primary key)
+user_id
+book_id
+pages_read
+session_date
+
+
+Yearly_Challenge: yearly reading goals
+id (primary key)
+user_id
+year
+goal_books
+creation_time
