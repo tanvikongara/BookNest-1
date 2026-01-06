@@ -1,0 +1,25 @@
+Authentication:
+- register
+- login
+
+Book:
+- search for a book
+- add a new book 
+
+User Shelves:
+- add a book to shelf
+- get all the books on a shelf
+- update rating/shelf
+- delete a book from shelf
+
+Reviews:
+- add a review for a book
+- get all the reviews for a book
+
+Statistics:
+- get all the stats
+- get how many books read in a month
+
+Yearly Challenge: 
+- set your yearly challenge
+- see your progress on your yearly challenge
