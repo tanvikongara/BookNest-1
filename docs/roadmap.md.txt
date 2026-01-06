@@ -1,0 +1,33 @@
+Phases:
+
+Planning:
+- Finalize the features for the basic model
+- Create the database schema (tables)
+- Set up the GitHub repo and the folder structure
+
+Backend/Database:
+- Authentication methods
+- Build the database and tables
+- Shelves
+- Ratings
+- Reviews
+- Shelf editing
+- Statistics 
+
+Frontend:
+- Build all pages:
+  - Login
+  - Search
+  - Book detail
+  - Shelf view
+  - Statistics dashboard
+
+Recommendation system:
+- Authors
+- Genres
+- Tropes 
+
+Testing
+
+Extra features 
+
