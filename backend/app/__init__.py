@@ -3,6 +3,7 @@ from .config import Config
 from .extensions import db, migrate, jwt
 from .routes.auth import auth_bp
 from .routes.books import books_bp
+from .routes.user_books import user_books_bp
 
 
 def create_app():
@@ -15,6 +16,7 @@ def create_app():
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(books_bp)
+    app.register_blueprint(user_books_bp)
 
 
     return app

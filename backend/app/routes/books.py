@@ -6,7 +6,7 @@ from flask_jwt_extended import jwt_required
 
 books_bp = Blueprint("books", __name__, url_prefix="/api/books")
 
-
+# Search for books using the Google Books API
 @books_bp.route("/search")
 @jwt_required()
 def search_books():
@@ -38,6 +38,7 @@ def search_books():
     return jsonify(results), 200
 
 
+# Save a book to the database using its Google Books ID 
 @books_bp.route("", methods=["POST"])
 @jwt_required()
 def save_book():

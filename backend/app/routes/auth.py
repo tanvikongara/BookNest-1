@@ -6,7 +6,7 @@ from app.models import User
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/api/auth")
 
-
+# Creates a new user account
 @auth_bp.route("/register", methods=["POST"])
 def register():
     data = request.get_json()
@@ -32,7 +32,7 @@ def register():
 
     return jsonify({"message": "User created"}), 201
 
-
+# Authenticates a user
 @auth_bp.route("/login", methods=["POST"])
 def login():
     data = request.get_json()
