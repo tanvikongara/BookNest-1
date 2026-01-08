@@ -4,6 +4,7 @@ from .extensions import db, migrate, jwt
 from .routes.auth import auth_bp
 from .routes.books import books_bp
 from .routes.user_books import user_books_bp
+from .routes.reviews import reviews_bp
 
 
 def create_app():
@@ -17,6 +18,7 @@ def create_app():
     app.register_blueprint(auth_bp)
     app.register_blueprint(books_bp)
     app.register_blueprint(user_books_bp)
+    app.register_blueprint(reviews_bp)
 
 
     return app

@@ -46,3 +46,19 @@ class UserBook(db.Model):
 
     user = db.relationship("User", backref="user_books")
     book = db.relationship("Book", backref="user_books")
+
+
+class Review(db.Model):
+    __tablename__ = "reviews"
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    book_id = db.Column(db.Integer, db.ForeignKey("books.id"), nullable=False)
+
+    rating_snapshot = db.Column(db.Float)
+    review_text = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    user = db.relationship("User", backref="reviews")
+    book = db.relationship("Book", backref="reviews")
