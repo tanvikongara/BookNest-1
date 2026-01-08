@@ -5,6 +5,7 @@ from .routes.auth import auth_bp
 from .routes.books import books_bp
 from .routes.user_books import user_books_bp
 from .routes.reviews import reviews_bp
+from .routes.stats import stats_bp
 
 
 def create_app():
@@ -19,6 +20,7 @@ def create_app():
     app.register_blueprint(books_bp)
     app.register_blueprint(user_books_bp)
     app.register_blueprint(reviews_bp)
+    app.register_blueprint(stats_bp)
 
 
     return app
